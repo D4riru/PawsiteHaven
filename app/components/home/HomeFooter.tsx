@@ -144,13 +144,13 @@ export function HomeFooter({ basePath = '/' }: HomeFooterProps) {
             <div className="mt-8 w-full">
               <p className="mb-4 text-center text-lg font-bold text-black">Contact Us:</p>
               <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
-                <SocialIcon label="Facebook" href="https://www.facebook.com/">
+                <SocialIcon label="Facebook" href="https://www.facebook.com/aldrian.moulic">
                   <FacebookIcon className="h-[1.125rem] w-[1.125rem] sm:h-5 sm:w-5" />
                 </SocialIcon>
                 <SocialIcon label="TikTok" href="https://www.tiktok.com/">
                   <TiktokIcon className="h-[1.125rem] w-[1.125rem] sm:h-5 sm:w-5" />
                 </SocialIcon>
-                <SocialIcon label="YouTube" href="https://www.youtube.com/">
+                <SocialIcon label="YouTube" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&list=RDdQw4w9WgXcQ&start_radio=1">
                   <YoutubeIcon className="h-5 w-5 sm:h-6 sm:w-6" />
                 </SocialIcon>
                 <SocialIcon label="Instagram" href="https://www.instagram.com/">
