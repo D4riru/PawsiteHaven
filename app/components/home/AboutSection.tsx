@@ -80,7 +80,6 @@ export function AboutSection() {
 
         <div className="w-full flex-1">
           <p className="mb-4 text-center text-sm text-gray-600 lg:text-left">
-            Hover the photo for more detail. Click anywhere on a card to pin details open (click again to close).
           </p>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-5">
             {CARE_CARDS.map((card) => {
@@ -99,9 +98,8 @@ export function AboutSection() {
                       togglePin(card.id);
                     }
                   }}
-                  className={`group relative flex cursor-pointer flex-col overflow-hidden rounded-[1.25rem] bg-white shadow-md ring-1 ring-black/5 transition-shadow outline-none focus-visible:ring-2 focus-visible:ring-[#FF8A00] focus-visible:ring-offset-2 hover:shadow-lg ${
-                    pinned ? 'ring-2 ring-[#FF8A00] shadow-lg' : ''
-                  }`}
+                  className={`group relative flex cursor-pointer flex-col overflow-hidden rounded-[1.25rem] bg-white shadow-md ring-1 ring-black/5 transition-shadow outline-none focus-visible:ring-2 focus-visible:ring-[#FF8A00] focus-visible:ring-offset-2 hover:shadow-lg ${pinned ? 'ring-2 ring-[#FF8A00] shadow-lg' : ''
+                    }`}
                 >
                   <div className="relative aspect-[4/3] w-full overflow-hidden">
                     <img
@@ -110,11 +108,10 @@ export function AboutSection() {
                       className="absolute inset-0 h-full w-full object-cover transition duration-500 group-hover:scale-105"
                     />
                     <div
-                      className={`pointer-events-none absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/88 via-black/55 to-black/20 p-4 text-left text-white transition-all duration-300 ease-out md:p-5 ${
-                        pinned
+                      className={`pointer-events-none absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/88 via-black/55 to-black/20 p-4 text-left text-white transition-all duration-300 ease-out md:p-5 ${pinned
                           ? 'translate-y-0 opacity-100'
                           : 'translate-y-3 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 group-focus-within:translate-y-0 group-focus-within:opacity-100'
-                      }`}
+                        }`}
                     >
                       <p className="mb-1 text-xs font-semibold uppercase tracking-wide text-[#FFD89A]">More info</p>
                       <div className="max-h-[55%] overflow-y-auto pr-1 text-xs leading-snug md:text-sm md:leading-relaxed">

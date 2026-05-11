@@ -32,7 +32,7 @@ export function HeroSection({ loggedIn }: { loggedIn?: boolean }) {
           ) : (
             <Link
               href="/auth/signup/step1"
-              className="inline-block bg-black text-white rounded-full px-8 py-3 text-lg font-semibold shadow hover:bg-[#FFA800] hover:text-black transition"
+              className="inline-block bg-[#FFA800] text-white rounded-full px-8 py-3 text-lg font-semibold shadow hover:bg-black hover:text-black transition"
             >
               Join us
             </Link>

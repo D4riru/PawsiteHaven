@@ -256,15 +256,15 @@ export default function AdoptionFormPage() {
             </footer>
           </form>
           </div>
-          
-          {/* Right Side - Image */}
-          <div className="hidden lg:flex flex-1 justify-center items-center sticky top-24">
-            <img 
-              src="/kiten.png" 
-              alt="Cute kitten" 
-              className="w-full max-w-lg object-contain drop-shadow-2xl hover:scale-105 transition-transform duration-300"
-            />
-          </div>
+        </div>
+        
+        {/* Floating Cat - Bottom Right */}
+        <div className="fixed bottom-0 right-0 z-40 pointer-events-none select-none hidden md:block">
+          <img 
+            src="/kiten.png" 
+            alt="Cute kitten" 
+            className="w-64 lg:w-96 object-contain drop-shadow-2xl"
+          />
         </div>
       </main>
 
