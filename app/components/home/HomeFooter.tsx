@@ -120,7 +120,7 @@ export function HomeFooter({ basePath = '/' }: HomeFooterProps) {
                 >
                   PawSite Haven
                 </Link>
-                <p className="mt-1 max-w-xl text-md text-white/95 sm:text-base">
+                <p className="mt-1 max-w-xl text-md font-bold text-white/95 sm:text-base">
                   ~Connecting hearts with adoptable pets, one paw at a time.~
                 </p>
               </div>
