@@ -15,7 +15,7 @@ const shelters = [
     phoneHref: 'tel:+639777358600',
     mapQuery: 'New+Washington+Village+Road+Talomo+Davao+City',
     image:
-      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfGpLqLzavrK1W3hGff0cXgkUtpS2sM-Yyxw&s',
+      'https://paws.org.ph/wp-content/uploads/2022/06/Adoption-Counseling-Volunteers.jpg',
   },
   {
     name: 'Davao City Dog Pound',
