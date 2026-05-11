@@ -141,7 +141,7 @@ export function MapGallerySection() {
           <div className="relative pt-10">
             <div className="absolute -top-1 left-0 z-20 flex items-start gap-3">
               <img
-                src="https://images.unsplash.com/photo-1583511655857-d19b40a7a54e?auto=format&fit=crop&w=200&q=80"
+                src="https://www.pngitem.com/pimgs/m/32-321920_dog-png-jack-russell-puppies-tan-and-white.png"
                 alt="Small dog peeking above the map"
                 className="h-20 w-20 -rotate-6 rounded-full border-4 border-white object-cover shadow-lg md:h-24 md:w-24"
               />
