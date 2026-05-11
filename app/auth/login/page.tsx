@@ -32,7 +32,7 @@ export default function LoginPage() {
 
   return (
     <main className="min-h-screen relative flex items-center justify-center bg-amber-500 px-6">
-      <div className="pointer-events-none absolute left-0 bottom-0 z-10 w-80 md:w-[40rem] opacity-100">
+      <div className="hidden md:block pointer-events-none absolute left-0 bottom-0 z-10 w-80 md:w-[40rem] opacity-100">
         <Image
           src="/arf.png"
           alt="Decorative dog"
