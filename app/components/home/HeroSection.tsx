@@ -6,13 +6,13 @@ export function HeroSection({ loggedIn }: { loggedIn?: boolean }) {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-8">
         <div className="flex-1 flex flex-col items-start justify-center">
           <h1
-            className="text-5xl md:text-5xl font-extrabold text-[#FFA800] drop-shadow-md leading-tight mb-2"
+            className="text-4xl md:text-5xl font-extrabold text-[#FFA800] drop-shadow-md leading-tight mb-2"
             style={{ textShadow: '2px 2px 0 #000' }}
           >
             YOUR PET DESERVES
           </h1>
           <h2
-            className="text-8xl font-extrabold text-[#FFA800] mb-4"
+            className="text-6xl sm:text-7xl md:text-8xl font-extrabold text-[#FFA800] mb-4"
             style={{ textShadow: '2px 2px 0 #000' }}
           >
             THE BEST
