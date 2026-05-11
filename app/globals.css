@@ -1,0 +1,367 @@
+@import "tailwindcss";
+
+:root {
+  --primary-color: #f7a000;
+  --text-dark: #1a1a1a;
+  --text-light: #ffffff;
+  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--text-light);
+  color: var(--text-dark);
+  font-family: var(--font-main);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Smooth transitions — applied only to interactive elements, NOT the wildcard * selector
+   (using * with transition causes severe browser freezing on complex pages) */
+a, button, input, select, textarea {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+/* Navigation styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 5%;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-container {
+  align-items: center;
+  color: var(--primary-color);
+  display: flex;
+  font-size: 1.5rem;
+  font-weight: bold;
+  gap: 10px;
+}
+
+.search-bar {
+  align-items: center;
+  background-color: var(--text-light);
+  border-radius: 20px;
+  display: flex;
+  padding: 5px 15px;
+  width: 300px;
+}
+
+.search-bar input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  width: 100%;
+}
+
+nav ul {
+  display: flex;
+  font-size: 0.9rem;
+  gap: 20px;
+  list-style: none;
+}
+
+/* --- Hero Section --- */
+.hero {
+  align-items: center;
+  background-color: var(--text-light);
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 5%;
+}
+
+.hero-text {
+  max-width: 50%;
+}
+
+.hero-text h1 {
+  color: var(--primary-color);
+  font-size: 3.5rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  text-transform: uppercase;
+}
+
+.hero-text h1 span {
+  color: #d97706;
+}
+
+.hero-text p {
+  color: #555;
+  font-size: 1.2rem;
+  font-style: italic;
+  margin-bottom: 30px;
+}
+
+.btn-join {
+  background-color: var(--text-dark);
+  border: none;
+  border-radius: 25px;
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 10px 40px;
+}
+
+.hero-image {
+  align-items: center;
+  background-color: #e0e0e0;
+  background-image: url('https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=800&q=80');
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  width: 45%;
+}
+
+/* --- Shelters Section --- */
+.shelters-section {
+  padding: 40px 5%;
+}
+
+.shelters-section h2 {
+  font-size: 2rem;
+  margin-bottom: 5px;
+}
+
+.shelters-section p {
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.shelter-card {
+  background-blend-mode: overlay;
+  background-color: #333;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.shelter-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 2;
+}
+
+.shelter-card p {
+  color: #eee;
+  font-size: 0.9rem;
+  margin-bottom: 0;
+  position: relative;
+  z-index: 2;
+}
+
+.card-1 { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)); }
+.card-2 { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)); }
+.card-3 { background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)); }
+
+/* --- Map & Photo Grid Section --- */
+.map-section {
+  align-items: stretch;
+  display: flex;
+  gap: 20px;
+  padding: 40px 5%;
+}
+
+.map-container {
+  background-color: #e0f2fe;
+  background-color: #e0f2fe;
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+  flex: 1;
+  min-height: 400px;
+  position: relative;
+}
+
+.map-badge {
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  padding: 10px 20px;
+  position: absolute;
+  right: 20px;
+  top: -30px;
+}
+
+.photo-grid {
+  display: grid;
+  flex: 1;
+  gap: 10px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.photo-grid div {
+  background-color: #ccc;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.pg-1 { grid-row: span 2; background-color: #fed7aa; }
+.pg-2 { background-color: #fde68a; }
+.pg-3 { grid-row: span 2; background-color: #bbf7d0; }
+.pg-4 { grid-row: span 2; background-color: #bfdbfe; }
+.pg-5 { grid-row: span 2; background-color: #e9d5ff; }
+
+/* --- Testimonials --- */
+.testimonials {
+  padding: 40px 5%;
+  text-align: center;
+}
+
+.testimonials h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+}
+
+.testimonial-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.test-card {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #fff;
+  padding: 20px;
+  text-align: left;
+}
+
+.test-card img {
+  border-radius: 10px;
+  height: 150px;
+  margin-bottom: 15px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.test-card p {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 10px;
+}
+
+.test-card span {
+  display: block;
+  font-weight: bold;
+  text-align: right;
+}
+
+/* --- About Us Section --- */
+.about-section {
+  display: flex;
+  gap: 40px;
+  padding: 50px 5%;
+}
+
+.about-text {
+  flex: 1;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.about-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.about-text p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.care-grid {
+  display: grid;
+  flex: 1;
+  gap: 15px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.care-card {
+  align-items: flex-end;
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+  display: flex;
+  min-height: 180px;
+  overflow: hidden;
+  position: relative;
+}
+
+.care-1 { background-color: #fed7aa; }
+.care-2 { background-color: #fde68a; }
+.care-3 { background-color: #bbf7d0; }
+.care-4 { background-color: #bfdbfe; }
+
+.care-card-content {
+  background-color: var(--primary-color);
+  color: #fff;
+  font-size: 0.85rem;
+  padding: 15px;
+  width: 100%;
+}
+
+.care-card-content h4 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+/* --- FAQ & Footer (Moved to Tailwind) --- */
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .hero, .map-section, .about-section {
+    flex-direction: column;
+  }
+  .hero-text, .hero-image, .map-container, .photo-grid {
+    max-width: 100%;
+    width: 100%;
+  }
+}
+
+@keyframes mapCardIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
