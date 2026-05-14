@@ -275,7 +275,7 @@ export default function AdoptionFormPage() {
             <div className="flex-1 flex justify-center md:justify-end">
               {/* Fallback to dogehtinkyu.png or use a default if it contains the full text */}
               <img 
-                src="/dogehtinkyu.png" 
+                src="/dogeismayl.png" 
                 alt="Thank you dog" 
                 className="w-full max-w-lg object-contain"
                 onError={(e) => {
